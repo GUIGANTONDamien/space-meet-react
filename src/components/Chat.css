@@ -1,0 +1,28 @@
+.chat-container {
+  width: 90%;
+  margin: auto;
+}
+
+.chat-container h3 {
+  margin: 5px 0;
+  color: rgb(255, 25, 106);
+}
+
+.match-list {
+  height: 100px;
+}
+
+.match-list-container {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  overflow: scroll;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.chat-list-container {
+  width: 100%;
+  height: 50vh;
+}

@@ -1,4 +1,5 @@
 import './ChangeMiniPicture.css';
+import React from 'react';
 
 const ChangeMiniPicture = ({ url, setUrl }) => {
   const imageHandler = (e) => {

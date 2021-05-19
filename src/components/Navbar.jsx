@@ -1,4 +1,5 @@
 import './Navbar.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Profil from '../img/profil.png';
 import chat from '../img/chat.png';

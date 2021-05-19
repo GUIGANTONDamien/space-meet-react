@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-
+import React from 'react';
 import cake from '../img/cake.svg';
 
 import marker from '../img/marker.png';

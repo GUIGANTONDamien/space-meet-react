@@ -1,6 +1,6 @@
 .match-chat {
   background-color: #eee;
-  height: 57vh;
+  height: 51vh;
   border-radius: 10px;
   padding: 10px;
   overflow: scroll;
@@ -20,7 +20,7 @@
   padding: 10px;
 }
 
-.message-first {
+.message-pnj {
   border-radius: 20px;
   padding: 8px 15px;
   margin-top: 5px;
@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.message {
+.message-user {
   border-radius: 20px;
   padding: 8px 15px;
   margin-top: 5px;
@@ -111,4 +111,9 @@
 .send-btn-icon {
   width: 30px;
   height: 30px;
+}
+
+.startChat {
+  display: flex;
+  justify-content: center;
 }

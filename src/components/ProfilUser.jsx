@@ -1,9 +1,10 @@
 import './ProfilMassEffect.css';
 import './ProfilUser.css';
+import React from 'react';
 import marker from '../img/marker.png';
 import profil from '../img/profil.png';
 import buttonEdit from '../img/edit.png';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 function ProfilUser() {
   const pseudo = localStorage.getItem('pseudo');
@@ -12,16 +13,23 @@ function ProfilUser() {
   const about = localStorage.getItem('about');
   const quote = localStorage.getItem('quote');
 
+  const historyPush = useHistory();
+
+  const handleReset = () => {
+    localStorage.clear();
+    historyPush.push('/');
+  };
+
   return (
     <div className='profil-masseffect'>
       <div className='container-img-profil'>
         <img className='img-profil-ME' src={photoOK} alt='img' />
       </div>
       <div className='infos-container'>
-        <div className="button-edit-container">
-        <Link to='/ProfilEdit'>
-          <img className='button-edit' src={buttonEdit} alt='button-edit' />
-        </Link>
+        <div className='button-edit-container'>
+          <Link to='/ProfilEdit'>
+            <img className='button-edit' src={buttonEdit} alt='button-edit' />
+          </Link>
         </div>
         <h1>{pseudo}</h1>
         <p>
@@ -37,6 +45,9 @@ function ProfilUser() {
         <p>{about}</p>
         <h3>Favourite quote</h3>
         <p style={{ fontStyle: 'italic' }}>" {quote} "</p>
+        <button type='button' onClick={() => handleReset()}>
+          Reset application
+        </button>
       </div>
     </div>
   );

@@ -1,23 +1,21 @@
 import { useState } from 'react';
+import React from 'react';
 
 const SliderMatch = () => {
-
   const [love, setLove] = useState(false);
-  const [match, setMatch] = useState(false)
+  const [match, setMatch] = useState(false);
 
   function handleLove() {
     setLove(!love);
   }
 
-
-
   return (
     <div>
-      <button type='button' onClick={handleLove} className="loveButton">
+      <button type='button' onClick={handleLove} className='loveButton'>
         Love!
       </button>
-      {characters.isRomanceable === setLove ? {  } : {  }}
-      <button type='button' onClick={notMatch} className="noButton">
+      {characters.isRomanceable === setLove ? {} : {}}
+      <button type='button' onClick={notMatch} className='noButton'>
         No!
       </button>
     </div>

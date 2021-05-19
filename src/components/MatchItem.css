@@ -7,8 +7,13 @@
   box-shadow: 0 0 5px 1px grey;
 }
 
-.match-item img {
+.charIcon {
   height: 65px;
   width: 65px;
   border-radius: 50%;
+}
+
+.msgIcon {
+  width: 30px;
+  margin: 10px;
 }

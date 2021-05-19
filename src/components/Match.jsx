@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import db from '../db';
 import './Match.css';
+import React from 'react';
 import MatchNoMore from './MatchNoMore';
 import HasMatched from './HasMatched';
 import { useEffect, useState } from 'react';

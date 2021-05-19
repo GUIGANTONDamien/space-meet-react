@@ -1,4 +1,5 @@
 import './ProfilMassEffect.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import marker from '../img/marker.png';
 import profil from '../img/profil.png';

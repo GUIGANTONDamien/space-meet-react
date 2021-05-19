@@ -1,4 +1,5 @@
 import './MatchNoMore.css';
+import React from 'react';
 import wink from '../img/emojiWink.png';
 
 const MatchNoMore = () => {

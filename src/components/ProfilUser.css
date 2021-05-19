@@ -8,3 +8,9 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.infos-container > h1,
+.infos-container > h3,
+.infos-container > p {
+  text-align: left;
+}

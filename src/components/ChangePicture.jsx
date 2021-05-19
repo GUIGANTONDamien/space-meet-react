@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ChangePicture = ({ pictureUploaded, setPictureUploaded }) => {
   const imageHandler = (e) => {
     const reader = new FileReader();

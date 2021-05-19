@@ -1,4 +1,5 @@
 import './LoadingPage.scss';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 import rocket from '../img/rocket-ship.png';
 

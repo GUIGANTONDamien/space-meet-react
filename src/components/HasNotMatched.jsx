@@ -1,4 +1,5 @@
 import './HasNotMatched.css';
+import React from 'react';
 import thumbsDown from '../img/thumbsDownRed.png';
 
 const HasNotMatched = () => {

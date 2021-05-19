@@ -1,4 +1,5 @@
 import './HasMatched.css';
+import React from 'react';
 
 const HasMatched = () => {
   return (

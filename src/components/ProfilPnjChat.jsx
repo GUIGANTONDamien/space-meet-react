@@ -1,4 +1,5 @@
 import './ProfilMassEffect.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import marker from '../img/marker.png';
 import profil from '../img/profil.png';
@@ -6,11 +7,10 @@ import leftArrow from '../img/left-arrow.png';
 import cake from '../img/cake.svg';
 
 function ProfilPnjChat(props) {
-  console.log(props);
   return (
     <div className='profil-masseffect'>
       <div className='container-img-profil'>
-      <Link to='/chat'>
+        <Link to='/chat'>
           <img className='img-left-arrow' alt='' src={leftArrow} />
         </Link>
         <img className='img-profil-ME' src={props.currentPnj.img} alt='img' />

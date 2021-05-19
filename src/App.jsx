@@ -53,7 +53,7 @@ function App() {
             </Route>
             <Route exact path='/chat'>
               <Navbar />
-              <Chat setCurrentPnj={setCurrentPnj} />
+              <Chat setCurrentPnj={setCurrentPnj} currentPnj={currentPnj} />
             </Route>
             <Route exact path='/profilPnjChat'>
               <ProfilPnjChat currentPnj={currentPnj} />
